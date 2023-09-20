@@ -1,0 +1,26 @@
+name: Code linting pipeline
+on: [push]
+jobs:
+  pipeline:
+    name: lint code
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
+    steps:
+    - name: checkout repository
+      uses: actions/checkout@v3
+
+    - name: set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version:  ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install poetry==1.4.0
+        poetry install
+
+    - name: Test with pre-commit
+      run: poetry run pre-commit run --all-files --show-diff-on-failure
