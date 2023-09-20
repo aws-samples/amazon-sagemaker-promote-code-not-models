@@ -1,0 +1,5 @@
+account                = "343975642840"
+profile                = "prod"
+region                 = "eu-west-3"
+scheduled_pipeline_run = "ENABLED"
+operations_account     = "123971416876"
