@@ -20,12 +20,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r ./training_pipeline/requirements.txt
 
-      - name: Login to [operations] account
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-region: eu-west-3
-          role-to-assume: arn:aws:iam::123971416876:role/123971416876-github-full-access
+      #- name: Login to [operations] account
+        #uses: aws-actions/configure-aws-credentials@v2
+        #with:
+          #aws-region: <region>
+          #role-to-assume: <role> 
 
-      - name: Build Docker containers and push to ECR
-        working-directory: ./training_pipeline
-        run: ./images/build_and_push_all.sh
+          # - name: Build Docker containers and push to ECR
+          #working-directory: ./training_pipeline
+          #run: ./images/build_and_push_all.sh

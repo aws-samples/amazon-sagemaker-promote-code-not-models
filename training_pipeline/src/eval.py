@@ -1,5 +1,8 @@
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT-0
+
+# ruff: noqa: E501
+
 """ Pipeline Evaluation Step: The trained model is loaded and evaluated on the eval data"""
 import numpy as np
 import logging
