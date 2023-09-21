@@ -1,5 +1,8 @@
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT-0
+
+# ruff: noqa: E501
+
 """Pipeline Preprocessing Step: Train and test text data is tokenized and the targets are encoded"""
 import numpy as np
 import pandas as pd
