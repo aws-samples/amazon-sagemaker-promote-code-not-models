@@ -1,0 +1,10 @@
+name="promote-code-not-models"
+version="0.1.0"
+description="Usecase for the promotion of pipelines instead of models across accounts"
+license="MIT"
+authors=[
+	"Robbe Sneyders",
+	"Mirro Goettler",
+	"Nick McCarthy",
+	"Fotinos Kyriakides"
+]
