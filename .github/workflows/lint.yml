@@ -20,6 +20,7 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install poetry==1.4.0
+        pip install pre-commit
         poetry install
 
     - name: Test with pre-commit
